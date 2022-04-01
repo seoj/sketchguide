@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Settings</h2>
+<mat-dialog-content>
+  <section class="canvas">
+    <h3>Canvas settings</h3>
+    <mat-form-field appearance="outline">
+      <mat-label>Width</mat-label>
+      <input matInput type="number" [(ngModel)]="width">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Height</mat-label>
+      <input matInput type="number" [(ngModel)]="height">
+    </mat-form-field>
+  </section>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="clickApply()">Apply</button>
+</mat-dialog-actions>
